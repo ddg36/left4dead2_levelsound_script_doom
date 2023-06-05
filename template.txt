@@ -1,0 +1,5001 @@
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+// Events 
+//
+
+"Event.MissionStart_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+//	Only first level (c1m1_mall -c6m1_passing -c13m1_coldstream -c8m1_no mercy)
+	//	"wave"			"@#music/stmusic/DOOM_2016.wav"
+	//	"wave"			"@#music/stmusic/DOOM_ETERNAL.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro2.wav"
+
+//	Others
+	//	"wave"			"@#music/stmusic/DOOM_hellwalker.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Ancient.wav"
+		"wave"			"@#music/stmusic/DOOM_Fortress.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.MissionStart_BaseLoop_NAMEHERE"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_TO_END"	
+		"MusicBlockTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+"Intro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"rndwave"
+	{
+//	Only first level (c1m1_mall -c6m1_passing -c13m1_coldstream -c8m1_no mercy)
+	//	"wave"			"@#music/stmusic/DOOM_2016.wav"
+	//	"wave"			"@#music/stmusic/DOOM_ETERNAL.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro2.wav"
+
+//	Others
+	//	"wave"			"@#music/stmusic/DOOM_hellwalker.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Ancient.wav"
+		"wave"			"@#music/stmusic/DOOM_Fortress.wav"
+	}
+	"GameData"
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.MissionStart_BaseLoop_NAMEHERE"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_TO_END"
+		"MusicBlockTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+		"MusicMasterTags"
+		{
+			"loopStart" "1.95"
+		}
+	}
+}
+
+"Event.CheckPointIntro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NONE"
+	"rndwave"
+	{
+//	Only first level (c1m1_mall -c6m1_passing -c13m1_coldstream -c8m1_no mercy)
+	//	"wave"			"@#music/stmusic/DOOM_2016.wav"
+	//	"wave"			"@#music/stmusic/DOOM_ETERNAL.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro2.wav"
+//  DEFAULT
+		"wave"			"@#music/stmusic/DeathTollIntro.wav"
+//	Others
+	//	"wave"			"@#music/stmusic/DOOM_hellwalker.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Ancient.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Fortress.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.CheckPointBaseLoop_NAMEHERE"
+		"MusicPriority"			"MEDIUM"
+		"MusicMaster"           "PLAY_TO_END"
+		"MusicMasterTags"
+		{
+			"loopStart" "1.95"
+		}
+	}
+}
+
+// --------------------------------------------------------------------
+// checkpoints
+// --------------------------------------------------------------------
+"Event.MissionStart_BaseLoop_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"		"@#music/stmusic/DOOM_hell.wav"
+	//	"wave"		"@#music/stmusic/DOOM_ancient_gods.wav"
+		"wave"		"@#music/zombiechoir/tottfiy/tottfiy_1a.wav"
+	}
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicBlockTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+"Event.CheckPointBaseLoop_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"		"@#music/stmusic/DOOM_hell.wav"
+	//	"wave"		"@#music/stmusic/DOOM_ancient_gods.wav"
+		"wave"		"@#music/zombiechoir/tottfiy/tottfiy_1a.wav"
+	}
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicBlockTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3,safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "infection,zombat_tp,zombat, zombat2, zombat3,safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+
+// --------------------------------------------------------------------
+// when you first leave a checkpoint
+"Event.LeavingSafety_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "overdub"
+		"MusicPriority"			"HIGH"
+		"MusicDelayTime"        "2.0"
+		"MusicBlockTrackList"    "infection,mobRules,zombiechoir,glimpse"
+		"MusicStopTrackList"     "infection,checkpoint,mobRules,zombiechoir,glimpse"
+	}
+}
+
+// --------------------------------------------------------------------
+// starting atmosphere after leaving checkpoint
+//"Event.StartAtmosphere_NAMEHERE"
+//{
+//	"channel"		"CHAN_STATIC"
+//	"volume"		"0.7"
+//	"soundlevel"	"SNDLVL_NONE"
+//	"rndwave"
+//	{
+//		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+//	}
+//
+//	GameData
+//	{
+//		"MusicPriority"			"HIGH"
+//		"MusicTrack"            "safeAmbient"	
+////		"MusicBlockTrackList"    "infection,ambient,mobRules"
+//		"MusicStopTrackList"     "checkpoint,mobRules,witchChoir"
+//	}
+//}
+//
+///////////////////////////////// Atmosphere!! //////////////////////////
+"Event.StartAtmosphere_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	//*******PUT ONLY SMALL MUSIc 00:01, 00:05	
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	//***intro nekr  01:00 or more***	
+	}
+	"GameData"
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+	//***special nekravol***	
+	//	"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+	//	"MusicBlockTrackList"   "infection,zombatIntro,ambient,zombat_tp,zombat, zombat2, zombat3,mobsignal,infection,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"    "infection,mobsignal,ambient,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+
+	}
+}
+
+"Event.SafeAtmosphere_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "safeAmbient"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"INTENSITY_CELING"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "infection,ambient,mobsignal,infection,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobsignal,ambient,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+
+// danger
+
+"Event.DangerAtmosphere_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		"MusicPriority"			"LOW"
+		"MusicTrack"            "ambient"	
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                       L4D1 Default Music                                       //
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// --------------------------------------------------------------------
+// Zombie choir
+//
+// --------------------------------------------------------------------
+"Event.ZombieChoir_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "zombiechoir"
+		"MusicPriority"			"HIGH"
+		"MusicBlockTrackList"    "infection,mobRules,glimpse,ambient"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+///////////////////////////////////////////////////////////
+// "Reveal" - We just moved into a large open space
+//
+"Event.LargeAreaRevealed_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "glimpse"
+		"MusicPriority"			"HIGH"
+		"MusicBlockTrackList"   "infection,mobRules,zombiechoir,ambient"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                       L4D2 Default Music                                       //
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------
+// Zombie choir
+//
+// --------------------------------------------------------------------
+"Event.ZombieChoir"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "zombiechoir"
+		"MusicPriority"			"HIGH"
+		"MusicBlockTrackList"    "infection,mobRules,glimpse,ambient"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+///////////////////////////////////////////////////////////
+// "Reveal" - We just moved into a large open space
+//
+"Event.LargeAreaRevealed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "glimpse"
+		"MusicPriority"			"HIGH"
+		"MusicBlockTrackList"   "infection,mobRules,zombiechoir,ambient"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+
+///////////////////////////////// Zombies!! //////////////////////////
+// L4D1
+// L4D2
+// NAMEHERE
+// S
+"Event.MobSignal1_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	GameData
+	{
+		"MusicPriority"			"CRITICAL"
+		"MusicTrack"            "mobsignal"	
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "mobsignal,infection,ambient, mobRules,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.MobSignal2_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	GameData
+	{
+		"MusicPriority"			"CRITICAL"
+		"MusicTrack"            "mobsignal"	
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "mobsignal,infection,ambient, mobRules,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+///////////////////////////////////////////////////////////
+//
+"Event.AmbientMob"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "infection"
+	//	"MusicPriority"			"LOW"
+	//	"MusicBlockTrackList"    "zombiechoir,glimpse,ambient, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"     "ambient, mobRules"
+	}
+}
+//////////////////////////////////////////////////////////////////////
+// the passing
+/////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------
+// checkpoints
+// --------------------------------------------------------------------
+"Event.MissionStart_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+//	Only first level (c1m1_mall -c6m1_passing -c13m1_coldstream -c8m1_no mercy)
+	//	"wave"			"@#music/stmusic/DOOM_2016.wav"
+	//	"wave"			"@#music/stmusic/DOOM_ETERNAL.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro2.wav"
+
+//	Others
+	//	"wave"			"@#music/stmusic/DOOM_hellwalker.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Ancient.wav"
+		"wave"			"@#music/stmusic/DOOM_Fortress.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.MissionStart_BaseLoop_ThePassing"
+		"MusicPriority"			"MEDIUM"
+		"MusicParameters"		"AFTER_DEATH"
+		"MusicMaster"           "PLAY_TO_END"	
+		"MusicBlockTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+"Event.CheckPointIntro_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+//	Only first level (c1m1_mall -c6m1_passing -c13m1_coldstream -c8m1_no mercy)
+	//	"wave"			"@#music/stmusic/DOOM_2016.wav"
+	//	"wave"			"@#music/stmusic/DOOM_ETERNAL.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro.wav"
+	//	"wave"			"@#music/stmusic/TAG_intro2.wav"
+//  DEFAULT
+		"wave"			"@#music/stmusic/DeathTollIntro.wav"
+//	Others
+	//	"wave"			"@#music/stmusic/DOOM_hellwalker.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Ancient.wav"
+	//	"wave"			"@#music/stmusic/DOOM_Fortress.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "checkpoint"
+		"MusicAutoQueue"        "Event.CheckPointBaseLoop_ThePassing"
+		"MusicPriority"			"MEDIUM"
+		"MusicMaster"           "PLAY_TO_END"
+		"MusicMasterTags"
+		{
+			"loopStart" "1.95"
+		}
+	}
+}
+
+"Event.CheckPointBaseLoop_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"		"@#music/stmusic/DOOM_hell.wav"
+	//	"wave"		"@#music/stmusic/DOOM_ancient_gods.wav"
+		"wave"		"@#music/zombiechoir/tottfiy/tottfiy_1a.wav"
+	}
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+		"MusicTagTrack"         "checkpoint"
+		"MusicBlockTrackList"   "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,ambient,PZAttack, mobRules,glimpse,zombiechoir, witch, witchChoir, mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,zombat_tp,zombat, zombat2, zombat3, safeAmbient,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+// --------------------------------------------------------------------
+// when you first leave a checkpoint
+"Event.LeavingSafety_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_1d.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "overdub"	
+		"MusicPriority"			"HIGH"
+		"MusicDelayTime"        "2.0"
+		"MusicBlockTrackList"   "infection,mobRules,zombiechoir,glimpse"
+		"MusicStopTrackList"    "infection,checkpoint,mobRules,zombiechoir,glimpse"
+	}
+	
+}
+
+// --------------------------------------------------------------------
+// starting atmosphere after leaving checkpoint
+"Event.StartAtmosphere_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	//*******PUT ONLY SMALL MUSIc 00:01, 00:05	
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	//***intro nekr  01:00 or more***	
+	}
+
+	"GameData"
+	{
+	//	"MusicPriority"			"LOW"
+		"MusicTrack"            "safeAmbient"	
+	}
+}
+"Event.SafeAtmosphere_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "safeAmbient"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"INTENSITY_CELING"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "infection,ambient,mobsignal,infection,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobsignal,ambient,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Event.DangerAtmosphere_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+	//	"MusicPriority"			"LOW"
+		"MusicTrack"            "ambient"	
+	}
+}
+
+// --------------------------------------------------------------------
+// zombat music
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+//  C6  ThePassing
+// --------------------------------------------------------------------
+
+"Event.Zombat2_Intro_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+			"wave"			"common/null.wav"
+	}
+
+
+	GameData
+	{
+		// "MusicAutoQueue"        "Event.Zombat_A2B_ThePassing"
+		"MusicTrack"            "zombat2c"
+		"MusicPriority"			"CRITICAL"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "0"
+		// "MusicMasterDivTags"    "8.0"
+	}
+}
+
+
+// --------------------------------------------------------------------
+// Danger
+// --------------------------------------------------------------------
+"Event.Zombat3_Intro_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	
+	GameData
+	{
+//		"MusicAutoQueue"        "Event.Zombat3_A_ThePassing"
+		"MusicTrack"            "zombat3"
+//		"MusicTagDelay"         "1, 7"
+//		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+//////////////////////////////////////////
+///////////////////////////////////////////
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+// swapped for new, check A/D V.S. B/C
+"Event.Zombat_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_1_ThePassing"
+		"MusicTrack"            "zombat_tp"
+		"MusicPriority"			"CRITICAL"
+//		"MusicBlockTrackList"   "zombat"
+		// "MusicMasterDivTags" "8"
+		// "MusicTagDelay"         "7"
+	}
+}
+"Event.Zombat_A_1_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_1_ThePassing"
+		"MusicTrack"            "zombat_tp"
+		"MusicTagTrack"         "zombat_tp"
+		"MusicPriority"			"CRITICAL"
+//		"MusicBlockTrackList"   "zombat"
+		"MusicMasterDivTags"    "1.0"
+		// "MusicTagDelay"         "7"
+
+	}
+}
+"Event.Zombat_B_1_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_1_ThePassing"
+		"MusicTrack"            "zombat_tp"
+		"MusicTagTrack"         "zombat_tp"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "1.0"
+//		"MusicBlockTrackList"   "zombat"
+		// "MusicTagDelay"         "7"
+	}
+}
+///////////////////////////////// Zombies!! //////////////////////////
+// L4D2
+// NAMEHERE
+// S
+"Event.MobSignal1_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	GameData
+	{
+		"MusicPriority"			"CRITICAL"
+		"MusicTrack"            "mobsignal"	
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "mobsignal,infection,ambient, mobRules,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,infection,mobRules,ambient"
+	}
+}
+"Event.MobSignal2_ThePassing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	GameData
+	{
+		"MusicPriority"			"CRITICAL"
+		"MusicTrack"            "mobsignal"	
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "mobsignal,infection,ambient, mobRules,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,infection,mobRules,ambient"
+	}
+}
+// --------------------------------------------------------------------	//
+// --------------------------------------------------------------------	//
+//							 DEFAULT MUSIC								//
+// --------------------------------------------------------------------	//
+// --------------------------------------------------------------------	//
+
+// --------------------------------------------------------------------	//
+// 							zombat music								//
+// --------------------------------------------------------------------	//
+"Event.Zombat_Intro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_NAMEHERE"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+"Event.Zombat_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+		//"wave"			"@#music/zombat/Snare_Horde_01_01a.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_NAMEHERE"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		// "MusicMasterDivTags" "8.0"
+ 		"MusicMasterTags"
+		{
+			"tag1" "1.033"
+			"tag2" "2.806"
+			"tag3" "5.647"
+		}
+	}
+}
+"Event.Zombat_A_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+		//"wave"			"@#music/zombat/Snare_Horde_01_01a.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_NAMEHERE"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "2"
+		"MusicPriority"			"CRITICAL"
+		// "MusicMasterDivTags" "8.0"
+ 		"MusicMasterTags"
+		{
+			"tag1" "1.033"
+			"tag2" "2.806"
+			"tag3" "5.647"
+		}
+	}
+}
+"Event.Zombat_B_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+		//"wave"			"@#music/zombat/Horde_01.wav"
+		//"wave"			"@#music/zombat/Horde_02.wav"
+		//"wave"			"@#music/zombat/Snare_Horde_01_01b.wav"
+		//"wave"			"@#music/zombat/Horde_03.wav"
+		//"wave"			"@#music/zombat/Horde_04.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_NAMEHERE"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "2"
+		"MusicPriority"			"CRITICAL"
+		// "MusicMasterDivTags" "8.0"
+ 		"MusicMasterTags"
+		{
+			"tag1" "1.033"
+			"tag2" "2.806"
+			"tag3" "5.647"
+		}
+	}
+}
+
+"Event.Zombat2_Intro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		// "MusicAutoQueue"        "Event.Zombat_A2B_NAMEHERE"
+		"MusicTrack"            "zombat2c"
+		"MusicPriority"			"CRITICAL"
+		"MusicTagTrack"         "zombat"
+		"MusicTagIndex"         "1"
+		// "MusicMasterDivTags"    "8.0"
+	}
+}
+"Event.Zombat2_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"			"zombat2"
+		"MusicTagTrack"			"zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" 	"7.0"
+	}
+}
+
+"Event.Zombat3_Intro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7" 
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+//		"MusicAutoQueue"        "Event.Zombat3_A_NAMEHERE"
+		"MusicTrack"            "zombat3"
+//		"MusicTagDelay"         "1, 7"
+			//	"MusicTagTrack"         "zombat"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+"Event.Zombat3_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7" //og: 1.0
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"			"zombat3"  //og: zombatMobbed
+		"MusicTagTrack"			"zombat"
+		"MusicPriority"			"CRITICAL" //og: HIGH
+	}
+}
+
+// --------------------------------------------------------------------
+// Danger
+// --------------------------------------------------------------------
+"Event.Zombat3_Intro_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7" 
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat3_A_NAMEHERE"
+		"MusicTrack"            "zombat3"
+		"MusicTagDelay"         "1, 7"
+		"MusicTagTrack"         "zombat"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+ "Event.Zombat3_A_NAMEHERE"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.77"
+	"soundlevel"	"SNDLVL_NONE"
+ 	"wave"			"common/null.wav"
+//	"wave"			"@#music/zombat/danger/Hordedanger_01.wav"
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat3_B_NAMEHERE"
+		"MusicTrack"            "zombat3"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicTagDelay"         "1, 7"
+
+	}
+}
+ 	
+ 
+ "Event.Zombat3_B_NAMEHERE"
+ {
+ 	"channel"		"CHAN_STATIC"
+ 	"volume"		"0.77"
+ 	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+// 	"wave"			"@#music/zombat/danger/Hordedanger_01.wav"
+ 	GameData
+ 	{
+ 		"MusicAutoQueue"        "Event.Zombat3_A_NAMEHERE"
+ 		"MusicTrack"            "zombat3"
+ 		"MusicTagTrack"         "zombat"
+ 		"MusicTagDelay"         "1, 7"
+ 		"MusicPriority"			"CRITICAL"
+ 	}
+ }
+"Event.ScavengeOvertimeEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	//"wave"			"@#music/zombat/GatesOfHell.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat"
+		"MusicPriority"			"LOW"
+	}
+}
+
+"Event.Zombat3_Intro_Clown"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.84"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/zombat/not_a_laughing_matter.wav"
+
+		
+	GameData
+	{
+		"MusicTrack"            "zombat3"
+		// "MusicTagTrack"         "zombat"
+		// "MusicAutoQueue"        "Event.Zombat3_A_Clown"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+// "Event.Zombat3_A_Clown"
+// {
+	// "channel"		"CHAN_STATIC"
+	// "volume"		"1.0"
+	// "soundlevel"	"SNDLVL_NONE"
+
+	// "rndwave"
+	// {
+		
+		// "wave"			"@#music/zombat/danger/not_a_laughing_matter.wav"
+	// }
+	// GameData
+	// {
+		// // "MusicAutoQueue"        "Event.Zombat3_B_Clown"
+		// "MusicTagTrack"         "zombat"
+		// "MusicTrack"            "zombat3"
+		// "MusicPriority"			"CRITICAL"
+		// // "MusicTagDelay"         "15"
+			
+		// "MusicTagDelay"         "15"
+		// // "MusicMasterDivTags" "8.0"
+	// }
+// }
+// "Event.Zombat3_B_Clown"
+// {
+	// "channel"		"CHAN_STATIC"
+	// "volume"		"1.0"
+	// "soundlevel"	"SNDLVL_NONE"
+
+	// "rndwave"
+	// {
+		
+		// "wave"			"@#music/zombat/danger/not_a_laughing_matter.wav"
+	// }
+	// GameData
+	// {
+		// "MusicAutoQueue"        "Event.Zombat3_A_Clown"
+		// "MusicTagTrack"         "zombat"
+		// "MusicTrack"            "zombat3"
+		// "MusicPriority"			"CRITICAL"
+		// "MusicTagDelay"         "15"
+		// // "MusicMasterDivTags" "8.0"
+	// }
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                       L4D1 Default Music                                       //
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// -----------------------------------------------------------------------------------------------//
+//											combat music                                          //
+// -----------------------------------------------------------------------------------------------//
+
+"Event.ZombatIntro_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"music/zombat/intro.wav"
+	}
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_L4D1"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+"Event.Zombat_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"		"Event.Zombat_A_L4D1"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	  GameData
+	{
+		"MusicAutoQueue"		"Event.Zombat_B_L4D1"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_B_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	  GameData
+	{
+		"MusicAutoQueue"		"Event.Zombat_A_L4D1"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                       L4D2 Default Music                                       //
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------- //
+// 								zombat music							 //
+// --------------------------------------------------------------------- //
+// --------------------------------------------------------------------- //
+// 								combat music							 //
+// --------------------------------------------------------------------- //
+"Event.Zombat_Intro_1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_1"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// swapped for new, check A/D V.S. B/C
+"Event.Zombat_1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_1"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_1"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_1"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+//--------------------------------------------------------------------
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_2"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// swapped out for new 2 C and D
+"Event.Zombat_2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_2"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_2"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_B_2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_2"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+
+//--------------------------------------------------------------------
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_3"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+"Event.Zombat_3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_3"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_A_3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_3"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_3"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_4"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// only b + c from old are ok, 
+"Event.Zombat_4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_4"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_4"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_4"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_5"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_5"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// new ones no good, don't add
+"Event.Zombat_5"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_5"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_5"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_5"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_B_5"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_5"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_6"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_6"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// NONE OF THE 6s are good find something else 
+"Event.Zombat_6"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_6"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+"Event.Zombat_A_6"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_6"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+"Event.Zombat_B_6"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_6"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_7"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_7"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// new ones no good, using existing
+"Event.Zombat_7"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_7"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_A_7"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_7"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_B_7"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_7"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_8"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_8"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// only b + c from old are ok, 
+"Event.Zombat_8"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_8"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_8"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_8"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_8"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_8"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_9"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_9"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+"Event.Zombat_9"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_9"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_9"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_9"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_9"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_9"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_10"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_10"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// only b + c from old are ok, 
+"Event.Zombat_10"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_10"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_10"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_10"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_10"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_10"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_11"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat_11"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+// only b + c from old are ok, 
+"Event.Zombat_11"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/intro/tottfiy_-05.wav"
+  	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_11"
+		"MusicTrack"            "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+"Event.Zombat_A_11"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_B_11"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+
+	}
+}
+"Event.Zombat_B_11"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicAutoQueue"        "Event.Zombat_A_11"
+		"MusicTrack"            "zombat"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "8.0"
+		"MusicTagDelay"         "7"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,finaleStart,overdub,glimpse,zombiechoir,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "PZAttack,infection,ambient,mobRules,safeAmbient"
+		"MusicStopTrackList"    "PZAttack,infection,mobRules,ambient"
+	}
+}
+
+
+
+
+
+
+
+// old 4a b c but deleted
+
+// new 09c,d, b(alt) = good 
+// 10  b c
+// 11 c d
+
+
+// --------------------------------------------------------------------
+//  Survival
+// --------------------------------------------------------------------
+"Event.Zombat2_Intro_Survival"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/zombat/slayer/lectric/Slayer_01a.wav"
+
+	GameData
+	{
+		"MusicTrack"            "zombat2c"
+		"MusicTagIndex"         "0"
+		"MusicTagTrack"         "zombat"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags"	"4.0"
+	}
+}
+// -------------------------------------------------------------------------------------------
+// Danger 
+// -------------------------------------------------------------------------------------------
+"Event.Zombat3_Intro_Survival"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.77"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+		//"wave"			"@#music/zombat/danger/HordeDanger_01.wav"
+		//"wave"			"@#music/zombat/danger/HordeDanger_02.wav"
+		//"wave"			"@#music/zombat/danger/HordeDanger_03.wav"
+		//"wave"			"@#music/zombat/danger/HordeDanger_04.wav"
+	}
+
+	GameData
+	{
+// 		"MusicAutoQueue"        "Event.Zombat3_A_coldstream"
+		"MusicTrack"            "zombat3"
+// 		"MusicTagDelay"         "1, 7"
+// 		"MusicTagTrack"         "zombat"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+/////////////////////////////////ESPECIAL/////////////////////////////////
+"Event.HunterAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.HunterAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.HunterAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.ChargerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.ChargerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.ChargerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+"Event.JockeyAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.JockeyAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.JockeyAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+
+////////////////////////////////////////////////
+"Event.BoomerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.BoomerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.BoomerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.SmokerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.SmokerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.SmokerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+"Event.SpitterAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{	
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.SpitterAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+
+	GameData
+	{
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"    "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+"Event.SpitterAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	
+	GameData
+	{
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "overdub,glimpse,zombiechoir"
+		"MusicBlockTrackList"   "infection,ambient, mobRules,mobsignal,PZAttack, SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,JockeyAlert"
+		"MusicStopTrackList"    "infection,mobRules,ambient"
+	}
+}
+
+
+
+// --------------------------------------------------------------------
+// Hunter Pounce
+// While being torn apart by a hunter
+// --------------------------------------------------------------------
+"Event.HunterPounce"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+		//"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		
+		"MusicBlockTrackList"   "mobRules,infection,ambient,safeAmbient"
+		"MusicStopTrackList"    "mobRules,infection,ambient"
+
+	}
+}
+"Event.HunterHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "hunterHits"
+	//	"MusicPriority"			"LOW"
+	}
+}
+
+
+// --------------------------------------------------------------------
+// SMOKER
+// While being choked by a smoker
+// --------------------------------------------------------------------
+
+"Event.SmokerChoke"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+		//"wave"			"common/null.wav"
+
+		GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	
+		"MusicBlockTrackList"   "mobRules,infection,ambient,safeAmbient"
+		"MusicStopTrackList"    "mobRules,infection,ambient"
+		
+	}
+}
+"Event.SmokerChokeHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "smokerHits"
+	//	"MusicPriority"			"LOW"
+	}
+}
+
+"Event.SmokerDrag"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+//		"MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+	}
+}
+"Event.SmokerDragHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "smokerHits"
+//		"MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+//		"MusicParameters"		"NO_INTENSITY_TRACK"
+	}
+}
+
+
+
+// --------------------------------------------------------------------
+// Charger smash
+// While being torn apart by a hunter
+// --------------------------------------------------------------------
+"Event.ChargerSmash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+//		"MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.ChargerHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "chargerHits"
+		// "MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+	}
+}
+"Event.ChargerSlam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+		//"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		
+		"MusicBlockTrackList"   "mobRules,infection,ambient,safeAmbient"
+		"MusicStopTrackList"    "mobRules,infection,ambient"
+
+	}
+}
+"Event.ChargerSlamHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "chargerSlamHits"
+		// "MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+	}
+}
+
+// --------------------------------------------------------------------
+// Jockey ride
+// --------------------------------------------------------------------
+"Event.JockeyRide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+		//"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "safeAmbient,concert1,concert2,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+
+		"MusicBlockTrackList"   "mobRules,infection,ambient,safeAmbient"
+		"MusicStopTrackList"    "mobRules,infection,ambient"
+	}
+}
+"Event.JockeyHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "jockeyHits"
+	//	"MusicPriority"			"LOW"
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------
+// Spitter Spit
+// --------------------------------------------------------------------
+"Event.SpitterSpit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_80dB"
+//	"wave"			")music/terror/PileOBile.wav"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		"MusicTrack"            "spitterSpit"
+//		"MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"LOW"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.SpitterBurn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+//	"wave"			"@#music/zombat/Enzymicide.wav"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+	//	"MusicDuckTrackList"    "all"
+	//	"MusicPriority"			"HIGH"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+
+// --------------------------------------------------------------------
+// Boomer
+// --------------------------------------------------------------------
+"Event.VomitInTheFace"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+	//	"MusicPriority"			"LOW"
+//		"MusicMaster"		"PLAY_SPLIT"
+		//"MusicDuckTrackList"    	"overdub,safeAmbient,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		//"MusicBlockTrackList"    "zombat_tp,zombat, zombat2, zombat3, mobRules,ambient"
+		//"MusicStopTrackList"     "zombat_tp,zombat, zombat2, zombat3, mobRules"
+	}
+}
+
+"Event.BoomerHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "boomerHits"
+	//	"MusicPriority"			"LOW"
+	}
+}
+
+
+///////////////////////////////// Finale!! //////////////////////////
+// -----------
+// FINALE START
+// -----------
+"Event.FinaleStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "finaleStart"
+		"MusicPriority"			"HIGH"
+	// ---NORMAL---
+		"MusicBlockTrackList"    "jukebox,infection,ambient,safeAmbient, mobRules,glimpse,zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "jukebox,infection,checkpoint,ambient, safeAmbient, overdub, glimpse, zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	// ---ALTERNATIVE---
+	//	"MusicBlockTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, mobRules,glimpse,zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"     "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,checkpoint,ambient, safeAmbient, overdub, glimpse, zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+// -----------
+// FINALE HALF WAVE
+// -----------
+"Event.FinaleWave4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2c.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2d.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "finaleStart"
+		"MusicPriority"			"HIGH"
+	// ---NORMAL---
+		"MusicBlockTrackList"    "jukebox,infection,ambient,safeAmbient, mobRules,glimpse,zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "jukebox,infection,checkpoint,ambient, safeAmbient, overdub, glimpse, zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	// ---ALTERNATIVE---
+	//	"MusicBlockTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, mobRules,glimpse,zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"     "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,checkpoint,ambient, safeAmbient, overdub, glimpse, zombiechoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+// ///////////////////////////////// Bosses!! //////////////////////////
+// Read the comment above "C2M5. RidinTank1"
+// --------------------------------------------------------------------
+// TANKS
+// --------------------------------------------------------------------
+
+"Event.Tank"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "concert1, concert2, checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+// tank midpoint
+// half way through the finale a tank shows up
+"Event.TankMidpoint"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "concert1, concert2, checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+// tank brothers
+// Before the final zombie battle 2 tanks show up
+"Event.TankBrothers"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "concert1, concert2, checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+//The Last Stand tank brothers music
+"Event.TankMidpoint_Metal"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "concert1, concert2, checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+// tank midpoint
+// half way through the finale a tank shows up
+
+//¡¡¡¡¡¡¡¡¡¡IMPORTANT¡¡¡¡¡¡¡¡¡¡
+// HEY!!! if you use this level_sound for the concert, use another music from tank:"Event.Tank" 
+// Use in "Event.Tank": "@#music/tank/tottfiy_a.wav" or another track for no conflicts or silence.
+"C2M5.RidinTank1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+"C2M5.RidinTank2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	
+	GameData
+	{
+		"MusicTrack"            "tank2"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+// tank midpoint
+// half way through the finale a tank shows up
+"C2M5.BadManTank1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+"C2M5.BadManTank2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/tank/tottfiy.wav"
+	//	"wave"			"@#music/tank/tottfiy_t.wav"
+	//	"wave"			"@#music/tank/tottfiy_a.wav"
+	//	"wave"			"@#music/tank/OneBadTank.wav"
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "tank2"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "concert, concert1, concert2, jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+"Event.TankDead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		"MusicTrack"            "tank"
+	}
+}
+
+// // ----------------------------------------------
+// // witch
+// // ----------------------------------------------
+"Event.WitchAttack"  
+ {
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "witch"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "zombatIntro,zombat_tp,zombat, zombat2, zombat3,infection,ambient,PZAttack, mobRules,safeAmbient"
+		"MusicStopTrackList"   	"zombatIntro,zombat_tp,zombat, zombat2, zombat3,infection,ambient,PZAttack, mobRules,safeAmbient"
+
+	}
+}
+"Event.WitchBurning"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-01.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-02.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-03.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-04.wav"
+	//	"wave"			"@#music/zombat/tottfiy/tottfiy_-05.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-06.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-07.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-08.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-09.wav"
+		"wave"			"@#music/zombat/tottfiy/tottfiy_-10.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "witch"
+		"MusicPriority"			"CRITICAL" 
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "overdub,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "zombatIntro,zombat_tp,zombat, zombat2, zombat3,infection,ambient,PZAttack, mobRules,safeAmbient"
+		"MusicStopTrackList"   	"zombatIntro,zombat_tp,zombat, zombat2, zombat3,infection,ambient,PZAttack, mobRules,safeAmbient"
+
+	}
+}
+//"Event.WitchRage"
+//{
+//	"channel"		"CHAN_STATIC"
+//	"volume"		"1.0"
+//	"soundlevel"	"SNDLVL_110dB"
+// 	"wave"			"music/witch/WitchEncroacher.wav"
+//	GameData
+//	{
+//		"MusicTrack"            "witch"
+//		"MusicPriority"			"CRITICAL"
+//	}
+//}
+"Event.WitchDead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+	GameData
+	{
+		"MusicTrack"            "witch"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "overdub,safeAmbient,finaleStart,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"    "infection,ambient,PZAttack, mobRules"
+		"MusicStopTrackList"   	"PZAttack,infection, mobRules"
+	}
+}
+
+///////////////////////////////// Scavenge Mode!! //////////////////////////
+"Event.ScavengeRoundStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+// 	"wave"	"@#music/mob/GermS1a.wav"
+
+	
+	GameData
+	{
+		"MusicPriority"			"MEDIUM"
+		"MusicTrack"            "checkpoint"
+	}
+}
+"Event.ScavengeRoundHalftime"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave"			"@#music/safe/TheMonstersWithout.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+"Event.ScavengeRoundEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+	//	"wave"			"@#music/safe/End_2016.wav"
+		"wave"			"@#music/safe/End.wav"
+	}	
+//	"wave"			"@#music/safe/TheMonstersWithout_s.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+"Event.ApproachingScavengeRoundWin"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/unalive/tottfiy.wav"
+//	"wave"			"@#music/scavenge/gascanofvictory.wav"
+
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"HIGH"
+	}
+}
+"Event.ScavengeOvertimeStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.95"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave"			"@#music/terror/ClingingToHell1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"MEDIUM"
+	}
+}
+"Event.ScavengeOvertimeEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//		"wave"			"music/zombat/intro.wav"
+		
+	GameData
+	{
+		"MusicTrack"            "zombatIntro"
+		"MusicAutoQueue"        "Event.Zombat"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+// level stuff
+"Event.ScavengeLevel_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave" "@#/music/scavenge/level_01_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.97"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//		"wave" "@#/music/scavenge/level_02_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.94"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave" "@#/music/scavenge/level_03_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_04"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.91"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave" "@#/music/scavenge/level_04_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_05"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.87"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+//	"wave" "@#/music/scavenge/level_05_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_06"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.80"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave" "@#/music/scavenge/level_06_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_07"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.76"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//		"wave" "@#/music/scavenge/level_07_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_08"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.72"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//		"wave" "@#/music/scavenge/level_08_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+		"MusicTagTrack"         "scavengeLevel"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_09"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.68"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//		"wave" "@#/music/scavenge/level_09_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+//		"MusicTagTrack"         "scavengeLevel"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+"Event.ScavengeLevel_10"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.64"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	}
+//	"wave" "@#/music/scavenge/level_10_01.wav"
+
+	GameData
+	{
+		"MusicTrack"            "scavengeLevel"
+//		"MusicTagTrack"         "scavengeLevel"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+		"MusicPriority"			"CRITICAL"
+		"MusicMasterDivTags" "4.0"
+	}
+}
+
+///////////////////////////////////////////////////////////
+//
+"Event.AmbientMob"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+		//"wave"			"music/infection/infection_09_01.wav"
+		//"wave"			"music/infection/infection_10_01.wav"
+		//"wave"			"music/infection/infection_11_01.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "infection"
+	}
+}
+//***********************C5m4**************************
+//
+"Event.MarchingIn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+		"wave"		"@#music/tank/flu/clasic_-01.wav"
+	//	"wave"		"*music/tank/flu/jukebox/BadMan.wav"
+	}
+
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "finaleStart, checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+//---------------------------
+"c2m2.carousel_music"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+		"wave"		"@#music/tank/flu/clasic_-03.wav"
+	//	"wave"		"*music/tank/flu/jukebox/BadMan.wav"
+	}
+//	"wave"	"music/tank/flu/RocketRide.wav"
+
+	GameData
+	{
+		"MusicTrack"            "concert"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "finaleStart, checkpoint,overdub,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+	}
+}
+
+"c6m1.SaveMeSomeSugar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+		"wave"		"@#music/tank/flu/clasic_-07.wav"
+	//	"wave"		"*music/tank/flu/jukebox/BadMan.wav"
+	}
+	//	"wave"	"*)music/flu/jukebox/save_me_some_sugar_mono.wav"
+
+	GameData
+	{
+		"MusicTrack"            "wedding"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "finaleStart, checkpoint,overdub,zombiechoir,glimpse,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules"
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"c2m4.Ridin1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	}
+	//	"wave"	")music/tank/flu/concert/midnightride.wav"
+
+	GameData
+	{
+		"MusicTrack"            "concert1"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//*****ALTERNATIVE*****
+	//	"MusicBlockTrackList"   "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"    "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"c2m4.Ridin2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+		"wave"			"music/zombat/intro.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	}
+	//	"wave"	")music/tank/flu/concert/midnightride.wav"
+
+	GameData
+	{
+		"MusicTrack"            "concert2"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//*****ALTERNATIVE*****
+	//	"MusicBlockTrackList"   "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"    "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"c2m4.BadMan1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+	//	"wave"			"music/zombat/intro.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+		"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	}
+	//	"wave"		")music/tank/flu/concert/onebadman.wav"
+
+	GameData
+	{
+		"MusicTrack"            "concert1"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+	//	"MusicBlockTrackList"   "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"    "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//*****ALTERNATIVE*****
+		"MusicBlockTrackList"   "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+"c2m4.BadMan2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+	//	"wave"			"common/null.wav"
+		"wave"			"music/zombat/intro.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2a.wav"
+	//	"wave"			"@#music/zombiechoir/tottfiy/tottfiy_2b.wav"
+	}
+//	"wave"		")music/tank/flu/concert/onebadman.wav"
+
+	GameData
+	{
+		"MusicTrack"            "concert2"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+	//	"MusicBlockTrackList"   "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"    "finaleStart,jukebox,infection,ambient,safeAmbient, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//*****ALTERNATIVE*****
+	"MusicBlockTrackList"   "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	"MusicStopTrackList"    "finaleStart,jukebox,zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+//------------------------------------------
+//  Jukebox music
+//------------------------------------------
+"Jukebox.BadMan1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-01.wav"
+//		"wave"		"*music/tank/flu/jukebox/BadMan.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Jukebox.Ridin1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-02.wav"
+//		"wave"		"*music/tank/flu/jukebox/MidnightRide.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+"Jukebox.AllIWantForXmas"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-03.wav"
+//		"wave"		"*music/tank/flu/jukebox/all_i_want_for_xmas.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Jukebox.saints_will_never_come"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-04.wav"
+//		"wave"		"*music/tank/flu/jukebox/TheSaintsWillNeverCome.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Jukebox.re_your_brains"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-05.wav"
+//		"wave"		"*music/tank/flu/jukebox/re_your_brains.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Jukebox.still_alive"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-06.wav"
+	//	"wave"		"*music/tank/flu/jukebox/portal_still_alive.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Jukebox.SaveMeSomeSugar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"@#music/tank/flu/clasic_-07.wav"
+	//	"wave"	"*music/flu/jukebox/save_me_some_sugar_mono.wav"
+	}
+
+
+	GameData
+	{
+		"MusicTrack"            "jukebox"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"			"PLAY_SPLIT"
+		"MusicDuckTrackList"    "checkpoint,overdub,zombiechoir,glimpse"
+		"MusicBlockTrackList"   "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"    "zombatIntro, zombat_tp,zombat, zombat2, zombat3,infection,ambient,safeAmbient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+
+	}
+}
+
+///////////////////////////////// DEATH!! //////////////////////////
+
+// DEATH
+//
+// There are many kinds of deaths, each specific to how you are dying.
+//
+
+// ledge hang
+// for dying by falling, each successive cue should segue into the next
+"Event.LedgeHangTwoHands"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/terror/ClingingToHell1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledge"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "all"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+"Event.LedgeHangOneHand"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/terror/ClingingToHell2.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledge"
+		"MusicPriority"			"CRITICAL"
+		"MusicDuckTrackList"    "all"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+"Event.LedgeHangFingers"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/terror/ClingingToHell3.wav"
+
+	GameData
+	{
+		"MusicDuckTrackList"    "all"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicTrack"            "ledge"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+// This cue starts exactly 10 seconds before falling as the health meter clicks down.
+"Event.LedgeHangAboutToFall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+//	"wave"			"@#music/terror/ClingingToHell4.wav"
+
+	GameData
+	{
+		"MusicDuckTrackList"    "all"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicTrack"            "ledge"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+
+	}
+}
+"Event.LedgeHangFalling"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicDuckTrackList"    "all"
+		"MusicBlockTrackList"    "zombat_tp, zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicTrack"            "ledge"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+// Hits
+"Event.LedgeHangTwoHandsHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+//	"wave"			"music/tags/ClingingToHellHit1.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledgeHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+
+}
+
+"Event.LedgeHangOneHandHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+//	"wave"			"music/tags/ClingingToHellHit2.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledgeHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+"Event.LedgeHangFingersHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+//	"wave"			"music/tags/ClingingToHellHit3.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledgeHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+// This cue starts exactly 10 seconds before falling as the health meter clicks down.
+"Event.LedgeHangAboutToFallHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			"common/null.wav"
+//	"wave"			"music/tags/ClingingToHellHit4.wav"
+
+	GameData
+	{
+		"MusicTrack"            "ledgeHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Down
+// Survivor is down and being beaten by infected
+"Event.Down_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+"Event.Down"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+
+// Down
+// Survivor is down and being beaten by infected
+"Event.DownHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"wave"			"common/null.wav"
+	"soundlevel"	"SNDLVL_100dB"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+"Event.DownHit"
+{
+	"channel"		"CHAN_STATIC"
+	"wave"			"common/null.wav"
+	"soundlevel"	"SNDLVL_100dB"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+// BleedingOut
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOut_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			 "CRITICAL"
+//		"MusicMaster"		"PLAY_SPLIT"
+
+	}
+}
+"Event.BleedingOut"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			 "CRITICAL"
+//		"MusicMaster"		"PLAY_SPLIT"
+
+	}
+}
+
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOutHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+"Event.BleedingOutHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "downHits"
+    	"MusicPriority"			"CRITICAL"
+		"MusicStopTrackList"    "mobRules,ambient,infection"
+	}
+		
+}
+
+// This cue starts exactly 10 seconds before death as the health meter clicks down.
+"Event.BleedingOutEnd_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+//		"MusicParameters"		"AFTER_DEATH"
+//		"MusicMaster"           "PLAY_SPLIT"
+	}
+}
+"Event.BleedingOutEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "down"
+		"MusicPriority"			"CRITICAL"
+//		"MusicParameters"		"AFTER_DEATH"
+//		"MusicMaster"           "PLAY_SPLIT"
+	}
+}
+
+
+// Survivor death
+// This is for the death of an individual survivor to be played after the health meter has reached zero
+"Event.SurvivorDeath_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+// Originaly it was changed from "PLAY_SPLIT" to "PLAY_SPLIT | DONT_DISENGAGE" in order to fix the bug where this cue wouldn't play if you were spectating on someone
+// This resulted in the cue playing for Infected players after killing one of the survivors alongside making any other sound playing quieter. Changing it back to "PLAY_SPLIT" fixes it
+		"MusicMaster"           "PLAY_SPLIT"
+
+	}
+}
+
+"Event.SurvivorDeath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+// Originaly it was changed from "PLAY_SPLIT" to "PLAY_SPLIT | DONT_DISENGAGE" in order to fix the bug where this cue wouldn't play if you were spectating on someone
+// This resulted in the cue playing for Infected players after killing one of the survivors alongside making any other sound playing quieter. Changing it back to "PLAY_SPLIT" fixes it
+		"MusicMaster"           "PLAY_SPLIT"
+
+	}
+}
+
+"Event.SurvivorDeathHit_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	//*******PUT ONLY SMALL MUSIc 00:01, 00:05	
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	//***intro nekr  01:00 or more***	
+	}
+	GameData
+	{
+		"MusicTrack"            "deathHits"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+	}
+}
+
+"Event.SurvivorDeathHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"			"common/null.wav"
+	//*******PUT ONLY SMALL MUSIc 00:01, 00:05	
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+	//	"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	//***intro nekr  01:00 or more***	
+	}
+	GameData
+	{
+		"MusicTrack"            "deathHits"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH"
+	}
+}
+
+"Event.ScenarioLose_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+
+"Event.ScenarioLose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-01.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-02.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-03.wav"
+		"wave"	"@#music/contagion/tottfiy/tottfiy_-04.wav"
+	}
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+
+///////////////////////////////// Finale!! //////////////////////////
+//
+// FINALE
+//
+
+// Final battle
+// For the final battle before getting rescued"Event.FinalBattle"
+"Event.FinalBattle_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/the_end/tottfiy.wav"
+
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"5.0"
+		"MusicBlockTrackList"    "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient,overdub,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient,overdub,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//****alternative********
+	//	"MusicBlockTrackList"    "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"     "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+"Event.FinalBattle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/the_end/tottfiy.wav"
+
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"5.0"
+		"MusicBlockTrackList"    "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient,overdub,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+		"MusicStopTrackList"     "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient,overdub,glimpse,zombiechoir, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//****alternative********
+	//	"MusicBlockTrackList"    "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	//	"MusicStopTrackList"     "jukebox,zombat_tp,zombat, zombat2, zombat3,tank,finaleStart,safeAmbient,checkpoint,ambient, PZAttack, witch, witchChoir, mobRules,mobsignal,SmokerAlert,BoomerAlert,HunterAlert,ChargerAlert,SpitterAlert,JockeyAlert"
+	}
+}
+
+///////////////////////////////// Scenario finish!! //////////////////////////
+"Event.ScenarioWin_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/unalive/tottfiy.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+"Event.ScenarioWin"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/unalive/tottfiy.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+
+"Event.SafeRoom_L4D1"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+	//	"wave"			"@#music/safe/End_2016.wav"
+		"wave"			"@#music/safe/End.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
+"Event.SafeRoom"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+	//	"wave"			"@#music/safe/End_2016.wav"
+		"wave"			"@#music/safe/End.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "default"
+		"MusicMaster"           "PLAY_TO_END | DONT_DISENGAGE"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"AFTER_DEATH | AFTER_MISSION_END"
+	}
+}
